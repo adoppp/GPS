@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    outline: none !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-1: #35155D;
+    --pink-1: #DA0C81;
+    --pink-2: #b4086a;
+    --pink-3: #c81e7e;
+    --bg-blue: #200755;
+    --lineal: #512B81;
+    --white: #f4f4f4;
+}
+
+body {
+    background-color: var(--bg-blue);
+    color: var(--white);
+}
+
+.header {
+    background-color: var(--purple-1);
+
+    border-bottom: 1px solid var(--pink-1);
+    border-radius: 0px 0px 10px 10px;
+
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 32px;
+}
+
+.header__container a {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(180deg, var(--pink-1) 0%, var(--lineal) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header__container a:hover {
+    animation: logo 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes logo  {
+    10% {
+        background: linear-gradient(190deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    15% {
+        background: linear-gradient(195deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    20% {
+        background: linear-gradient(200deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    25% {
+        background: linear-gradient(205deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    30% {
+        background: linear-gradient(210deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    35% {
+        background: linear-gradient(215deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    40% {
+        background: linear-gradient(220deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    45% {
+        background: linear-gradient(225deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50% {
+        background: linear-gradient(230deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    55% {
+        background: linear-gradient(225deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    60% {
+        background: linear-gradient(220deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    65% {
+        background: linear-gradient(215deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    70% {
+        background: linear-gradient(210deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75% {
+        background: linear-gradient(205deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    80% {
+        background: linear-gradient(200deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    85% {
+        background: linear-gradient(195deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    90% {
+        background: linear-gradient(190deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    95% {
+        background: linear-gradient(175deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        background: linear-gradient(180deg, var(--pink-1) 20%, var(--lineal) 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.about__section {
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about__section_content {
+    background: rgba(81, 43, 129, 0.55);
+
+    padding: 160px 0 16px 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.about__div_content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.about__section_content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.about__section_content h1::after {
+    content: 'Guid Pro Singer';
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    left: -60px;
+    top: 20px;
+}
+
+.about__section_content h1::before {
+    content: '';
+    display: block;
+    background-color: var(--pink-1);
+    height: 2px;
+    width: 132px;
+    position: relative;
+    top: 42px;
+}
+
+.about__section_content span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about__p_small {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.about__p_general {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+
+    max-width: 610px;
+
+    margin-bottom: 36px;
+}
+
+.about__section_content a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    background: var(--pink-1);
+
+    display: block;
+
+    max-width: fit-content;
+
+    margin-bottom: 140px;
+    padding: 12px 16px;
+    border-radius: 50px;
+
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__section_content a:hover {
+    background-color: var(--pink-2);
+    transform: scale(1.15);
+}
+
+.about__section_content a:active {
+    background-color: var(--pink-3);
+}
+
+.containsOf__section {
+    padding: 120px 0 60px 0;
+}
+
+.containsOf__div_container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.containsOf__div {
+    background-color: rgba(81, 43, 129, 0.35);
+    backdrop-filter: blur(4px);
+
+    max-width: 950px;
+
+    margin: 0 auto;
+
+    padding: 36px 60px;
+    
+    border: 1px solid var(--pink-1);
+    border-radius: 20px;
+}
+
+.containsOf__div  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    margin-bottom: 110px;
+}
+
+.containsOf__li {
+    max-width: 383px;
+}
+
+.containsOf__li div {
+    color: var(--pink-1);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 78.125%;
+
+    background-color: transparent;
+
+    max-width: fit-content;
+    max-height: fit-content;
+
+    margin-bottom: 8px;
+
+    padding: 22px 24px;
+
+    border: 1px solid var(--pink-1);
+    border-radius: 50%;
+}
+
+.containsOf__li:first-child div {
+    padding: 20px 27px;
+}
+
+.containsOf__li h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    margin-bottom: 8px;
+}
+
+.containsOf__li p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.containsOf__p_small {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
