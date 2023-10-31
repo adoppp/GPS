@@ -145,8 +145,14 @@ button {
     outline: none !important;
 }
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -417,7 +423,7 @@ body {
 }
 
 .containsOf__section {
-    padding: 120px 0 60px 0;
+    padding: 120px 16px 60px 16px;
 }
 
 .containsOf__div_container h2 {
@@ -495,3 +501,211 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+
+.forWho__div_container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.forWho__div {
+    background-color: rgba(81, 43, 129, 0.35);
+    backdrop-filter: blur(4px);
+
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 40px 60px 20px 60px;
+
+    border: 1px solid var(--pink-1);
+    border-radius: 20px;
+}
+
+.forWho__div h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+
+    margin-bottom: 8px;
+}
+
+.forWho__div span {
+    color: var(--pink-1);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.forWho__ul span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    display: block;
+
+    max-width: fit-content;
+
+    margin: 0 auto;
+    margin-bottom: 12px;
+
+    padding: 10px 16px;
+
+    border-radius: 50px;
+    border: 1px solid var(--pink-1);
+}
+
+.forWho__ul p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.forWho__ul li {
+    max-width: 415px;
+}
+
+.forWho__ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.forWho__div p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.forWho__section {
+    padding: 60px 16px;
+}
+
+.subscription__div-section_container {
+    padding: 60px 0;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.subscription__div-section_container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 80px;
+}
+
+.subscription__div_container {
+    background-color: rgba(81, 43, 129, 0.35);
+    backdrop-filter: blur(4px);
+
+    width: 380px;
+
+    margin: 0 auto;
+
+    padding: 32px 28px 60px 28px;
+
+    border: 1px solid var(--pink-1);
+    border-radius: 20px;
+}
+
+.subscription__div_container h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.subscription__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 44px;
+}
+
+.subscription__sub-list li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.subscription__sub-list {
+    max-width: 240px;
+    margin-bottom: 110px;
+}
+
+.last {
+    margin-bottom: 40px;
+}
+
+.subscription__sub-list span{
+    position: relative;
+    left: 24px;
+}
+
+.subscription__sub-list span::after {
+    content: '';
+    display: block;
+    border: 1px solid var(--pink-1);
+    position: relative;
+    top: -21px;
+    left: -24px;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+
+.subscription__two-strings-span span::after {
+    content: '';
+    display: block;
+    border: 1px solid var(--pink-1);
+    position: relative;
+    top: -46px;
+    left: -24px;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+
+.subscription__div_container button {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background: var(--pink-1);
+
+    display: block;
+
+    max-width: fit-content;
+
+    margin: 0 auto;
+    padding: 12px 16px;
+    border: 0px;
+    border-radius: 50px;
+
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription__div_container button:hover {
+    background-color: var(--pink-2);
+    transform: scale(1.15);
+}
+
+.subscription__div_container button:active {
+    background-color: var(--pink-3);
+}
+
