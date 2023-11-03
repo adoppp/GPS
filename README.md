@@ -1,1 +1,1 @@
-adaptive, modals
+adaptive, animation
