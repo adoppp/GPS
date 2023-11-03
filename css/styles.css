@@ -163,6 +163,7 @@ html {
     --bg-blue: #200755;
     --lineal: #512B81;
     --white: #f4f4f4;
+    --gray: #cecece;
 }
 
 body {
@@ -709,3 +710,108 @@ body {
     background-color: var(--pink-3);
 }
 
+.aboutMe__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 60px 16px 120px 60px;
+}
+
+.aboutMe__container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin: 32px 0 60px 0;
+}
+
+.aboutMe__container p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1; /* 112.5% */
+}
+
+.footer__background {
+    background-image: url('../img/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blur {
+    background: rgba(81, 43, 129, 0.55);
+
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--pink-1);
+    border-radius: 20px 20px 0 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 36px 16px 120px 16px;
+}
+
+.footer__container h2 {
+    color: var(--pink-1);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.03;
+    margin-bottom: 28px;
+}
+
+.footer__container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    max-width: 560px;
+}
+
+.footer__container a {
+    color: var(--white);
+
+    display: block;
+
+    position: relative;
+
+    transition-property: transform;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__container a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: var(--pink-1);
+}
+
+.footer__container a::before {
+    transition-property: width;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__container a:hover {
+    color: var(--gray);
+    transform: scale(1.1);
+}
+
+.footer__container a:hover:before {
+    width: 100%;
+}
