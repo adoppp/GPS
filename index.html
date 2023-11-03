@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div class="modal__blur hidden" data-modal>
+        <div class="modal__container">
+            <button id="close_btn" data-modal-close>x</button>
+            <form action="" class="form">
+                <div class="modal__select">
+                    <div class="select">
+                        <span class="selectLabel" id="jobLabel">Тариф</span>
+                        <div class="selectWrapper">
+                            <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
+                                <option value="sel" disabled="" selected=""> Select subscription...</option>
+                                <option value="Standard">Standard</option>
+                                <option value="Premium">Premium</option>
+                                <option value="VIP">VIP</option>
+                            </select>
+                    
+                            <div class="selectCustom js-selectCustom" aria-hidden="true">
+                                <div class="selectCustom-trigger">Select subscription...</div>
+                                <div class="selectCustom-options">
+                                    <div class="selectCustom-option" data-value="Standard">Standard</div>
+                                    <div class="selectCustom-option" data-value="Premium">Premium</div>
+                                    <div class="selectCustom-option" data-value="VIP">VIP</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input">
+                    <label for="surname">Iм'я</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+
+                <div class="input">
+                    <label for="surname">Призвище</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+
+                <div class="input">
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="Email">
+                </div>
+
+                <div class="input">
+                    <label for="location">Страна, город</label>
+                    <input type="text" name="location" id="location">
+                </div>
+
+                <div class="input">
+                    <label for="phone_number">Номер телефона</label>
+                    <input type="tel" name="phone_number" id="phone_number">
+                </div>
+
+                <div class="input">
+                    <label for="telegram">Никнейм в тг</label>
+                    <input type="text" name="telegram" id="telegram">
+                </div>
+
+                <button type="submit" id="btn">Відправити</button>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="header__container">
             <a href="index.html">GPS</a>
@@ -24,7 +86,7 @@
                             всіх, хто будь-коли мріяв навчитися співати. Цей курс вітає кожного, хто хотів спробувати себе у світі вокалу, незалежно
                             від того, чи вважали вони себе талановитими чи особливо обдарованими.
                         </p>
-                        <a href="#subscription">До пакетів</a>
+                        <a href="#subscriptions">До пакетів</a>
                     </div>
 
                     <p class="about__p_small">
@@ -117,7 +179,7 @@
             </div>
         </section>
 
-        <section id="subscription">
+        <section id="subscriptions">
             <div class="subscription__div-section_container">
                 <h2>Тарифи</h2>
 
@@ -144,7 +206,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button>Подати заявку</button>
+                            <button id="open-form-modal-btn" data-modal-open-one>Подати заявку</button>
                         </div>
                     </li>
                     <li>
@@ -169,7 +231,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button>Подати заявку</button>
+                            <button id="open-form-modal-btn" data-modal-open-two>Подати заявку</button>
                         </div>
                     </li>
                     <li>
@@ -197,7 +259,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button>Подати заявку</button>
+                            <button id="open-form-modal-btn" data-modal-open-three>Подати заявку</button>
                         </div>
                     </li>
                 </ul>
@@ -253,5 +315,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
