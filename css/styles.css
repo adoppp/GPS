@@ -831,6 +831,10 @@ body {
 
     position: fixed;
     z-index: 5;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 .modal__container {
@@ -844,6 +848,10 @@ body {
 
     border: 1px solid var(--pink-1);
     border-radius: 20px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
 }
 
 .hidden {
