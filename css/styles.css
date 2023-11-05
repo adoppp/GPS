@@ -822,8 +822,8 @@ body {
 
 .modal__blur {
     background: rgba(81, 43, 129, 0.55);
+    -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-
     width: 100vw;
     height: 100vh;
 
@@ -831,15 +831,12 @@ body {
 
     position: fixed;
     z-index: 5;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
 }
 
 .modal__container {
     background-color: rgba(53, 21, 93, 0.75);
-    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 
     max-width: 630px;
 
@@ -848,10 +845,6 @@ body {
 
     border: 1px solid var(--pink-1);
     border-radius: 20px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
 }
 
 .hidden {
@@ -1205,7 +1198,7 @@ body {
     }
     
     .about__section_content h1::before {
-        width: 126px;
+        width: 100px;
 
         top: 38px;
         right: -2px;
