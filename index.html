@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPS</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 <body>
     <div class="modal__blur hidden" data-modal>
@@ -141,35 +149,35 @@
                     <span class="wow animate__animated animate__slow animate__fadeIn">є унікальною нагодою для:</span>
                     <ul class="forWho__ul">
                         <li class="wow animate__animated animate__slow animate__fadeIn">
-                            <span>Початківців</span>
-                            <p>
+                            <span id="forWho__p_media">Початківців</span>
+                            <p id="forWho__description_media">
                                 Цей курс - ваш перший крок на шляху до захоплюючого світу вокального мистецтва, навіть якщо ви тільки починаєте
                                 досліджувати свої таланти.
                             </p>
                         </li>
                         <li class="wow animate__animated animate__slow animate__fadeIn">
-                            <span>Досвідчених співаків</span>
-                            <p>
+                            <span id="forWho__p_media">Досвідчених співаків</span>
+                            <p id="forWho__description_media">
                                 Для тих, хто співає, але завжди прагне вдосконалювати свій голос, розширити вокальні межі можливого, підвищити рівень
                                 майстерності.
                             </p>
                         </li>
                         <li class="wow animate__animated animate__slow animate__fadeIn">
-                            <span>Натхненних мрійників</span>
-                            <p>
+                            <span id="forWho__p_media">Натхненних мрійників</span>
+                            <p id="forWho__description_media">
                                 Якщо у вас таїться мрія про музичну кар'єру, що надихає, Марія Зейбель - ваш наставник i гід у світі музики.
                             </p>
                         </li>
                         <li class="wow animate__animated animate__slow animate__fadeIn">
-                            <span>Тих, хто сумнівається</span>
-                            <p>
+                            <span id="forWho__p_media">Тих, хто сумнівається</span>
+                            <p id="forWho__description_media">
                                 Тим, хто вважає, що вони не мають вродженого таланту, цей курс покаже, що кожен може навчитися співати, зруйнувавши ці
                                 сумніви.
                             </p>
                         </li>
                         <li class="wow animate__animated animate__slow animate__fadeIn">
-                            <span>Географічно незалежних студентів</span>
-                            <p>
+                            <span id="forWho__p_media">Географічно незалежних студентів</span>
+                            <p id="forWho__description_media">
                                 доступний для всіх бажаючих, незалежно від місця проживання та національності. Адже завдяки онлайн-формату він розкриває
                                 перед вами двері музичного світу, незалежно від вашого місцезнаходження.
                             </p>
@@ -268,6 +276,44 @@
         </section>
 
         <section>
+            <div class="review__container">
+                <h2>Biдгуки</h2>
+                <ul>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf1@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf1.jpg" alt="review" />
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf2@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf2.jpg" alt="review" />
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf3@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf3.jpg" alt="review" />
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf4@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf4.jpg" alt="review" />
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf5@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf5.jpg" alt="review" />
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp">
+                        <a href="./img/cerf6@2.png" data-fancybox="gallery" data-caption="review">
+                            <img src="./img/cerf6.jpg" alt="review" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
             <div class="aboutMe__container wow animate__animated animate__slow animate__fadeIn">
                 <img src="./img/masha.png" alt="Masha">
                 <h2>Стосовно мене</h2>
@@ -322,5 +368,7 @@
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>
